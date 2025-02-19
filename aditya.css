@@ -1,0 +1,181 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    width: 100%;
+}
+
+/* Basic structure */
+header {
+    background-color: #333;
+    color: #111010;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #0f0e0e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#hero {
+    text-align: center;
+    padding: 40px;
+    background-color: #9ec7f1;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+/* Main content styling */
+#content h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #333;
+}
+
+#content h3 {
+    font-size: 1.6em;
+    margin-top: 20px;
+}
+
+#content p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* CTA Button Styling */
+.cta {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #f39c12;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.cta:hover {
+    background-color: #e67e22;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #content {
+        padding: 15px;
+    }
+
+    .cta {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 1.5em;
+    }
+
+    #content h2 {
+        font-size: 1.6em;
+    }
+
+    #content h3 {
+        font-size: 1.4em;
+    }
+
+    .cta {
+        padding: 8px 20px;
+        font-size: 0.9em;
+    }
+}
